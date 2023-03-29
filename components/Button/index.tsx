@@ -6,7 +6,7 @@ import styles from "./Button.module.scss";
 interface ButtonProps {
   children?: string;
   disabled?: boolean;
-  color?: "green" | "gray";
+  color?: keyof typeof colors;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
 }
