@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { Avatar } from "../Avatar";
+import { BackButton } from "../BackButton";
 import Button from "../Button";
 import styles from "./Profile.module.scss";
 
@@ -20,10 +21,7 @@ export const Profile: React.FC<ProfileProps> = ({
   return (
     <>
       <Link href="/rooms">
-        <div className="d-flex mb-30 cup">
-          <img src="/static/back-arrow.svg" alt="Back" className="mr-10" />
-          <h3>Back</h3>
-        </div>
+        <BackButton title="Back" href="/rooms" />
       </Link>
 
       <div className="d-flex align-items-center">
