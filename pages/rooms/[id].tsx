@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { BackButton } from "../../components/BackButton";
 import { Header } from "../../components/Header";
 import { Room } from "../../components/Room";
